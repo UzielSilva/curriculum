@@ -1,0 +1,180 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Uziel Silva Espino}}
+
+Pino Michoacán \# 60\ \ \textbullet
+\ \ Los Pinos de Michoacán\ \ \textbullet
+\ \ Morelia, Michoacán. México 58057
+\\
+452-117-7849\ \ \textbullet
+\ \ uziel.silva.espino@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Personal accounts}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Skype username:]
+	uziel.silva.espino
+	\item[GitHub:]
+	UzielSilva
+	\item[Koding:]
+	uzielsilva
+	
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Programming skills.}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[General skills:]
+	Test Driven Development, English (40\% - 60\%). \\
+	
+	\item[Testing tools:]
+	Canopy,
+	Selenium,
+	NUnit. \\
+	
+	\item[Languages:]
+	Java,
+	C\#,
+	C,
+	F\#,
+	HTML,
+	Ruby. \\
+	
+	\item[Continuous Integration:]
+	CruiseControl.NET. \\
+	
+	\item[Open Source Contributions:]
+	Karel the Robot IDE in Java,
+	Canopy Framework. \\
+	
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience.}
+
+\begin{itemize}
+	\parskip=0.1em
+
+
+	\item
+	\headerrow
+		{\textbf{As Freelancer.}}
+		{\textbf{}}
+	\\
+	\headerrow
+		{\emph{}}
+		{\emph{2009 -- 2013}}
+	\begin{itemize*}
+		\item I was made several little applications with some people. The most
+		important was Karel the Robot IDE, an IDE for help some students in
+		learning process of programming languages.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Scio}}
+		{\textbf{http://sciodev.com/}}
+	\\
+	\headerrow
+		{\emph{Software Developer}}
+		{\emph{2013 -- Present}}
+	\begin{itemize*}
+		\item In Scio I learned about Test Driven Development, a powerful practice
+		for professional programming. This practice make clean code and reduce time
+		of bug fixing.
+		Unit tests help too with documentation, and is more easy to understand
+		applications with unit tests.
+		\item Agile Metodologies, like Scrum. This technique allows to all members
+		know the advances for all members of team. Scrum is very useful. If any member
+		isn't working, in Scrum all members know this, and help if they have any difficult.
+		\item Use of repositories like TFS, GitHub and SVN. And remote repositories.
+	    \item Use of test tools and developing automated tests with F\# and Canopy. This
+		practice helps in app development. So it can find some UI errors. Automated tests
+	    helps testing common automated tasks. It allows to the developer work in other tasks
+	    while test of UI is finished.
+	    \item Use of Continuous Integration for automated Build, test and deploy.
+	    With CruiseControl.NET we can check if commits of members of the team don't break
+	    the solution. We can add several tasks in the CCNet configuration and for each
+	    commit, CCNet will run these tasks.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Relevant Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{UMSNH (Universidad Michoacana de San Nicolas de Hidalgo).}}
+		{\textbf{Morelia, Michoacán}}
+	\\
+	\headerrow
+		{\emph{Facultad de Ciencias Físico-Matemáticas Luis Manuel Gutierrez Rivera}}
+		{\emph{2012 -- Present}}
+	\begin{itemize*}
+		\item In this university I'm currently coursing my bachelors degree as matematician.
+	\end{itemize*}
+
+\end{itemize}
+
+\end{document}
