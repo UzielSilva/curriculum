@@ -2,7 +2,7 @@
 % vim:set ft=tex spell:
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[letterpaper,margin=0.60in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
@@ -55,12 +55,12 @@ Pino Michoacán \# 60\ \ \textbullet
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Personal accounts}
+\subsection*{Cuentas personales}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[Skype username:]
+	\item[Skype:]
 	uziel.silva.espino
 	\item[GitHub:]
 	UzielSilva
@@ -72,40 +72,40 @@ Pino Michoacán \# 60\ \ \textbullet
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Programming skills.}
+\subsection*{Habilidades de programación.}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[General skills:]
-	Test Driven Development, English (40\% - 60\%). \\
+	\item[Habilidades generales:]
+	Test Driven Development, Inglés (40\% - 60\%). 
 	
-	\item[Testing tools:]
+	\item[Herramientas de pruebas:]
 	Canopy,
 	Selenium,
-	NUnit. \\
+	NUnit. 
 	
-	\item[Languages:]
+	\item[Lenguajes de programación:]
 	Java,
 	C\#,
 	C,
 	F\#,
 	HTML,
-	Ruby. \\
+	Ruby. 
 	
-	\item[Continuous Integration:]
-	CruiseControl.NET. \\
+	\item[Integración continua:]
+	CruiseControl.NET. 
 	
-	\item[Open Source Contributions:]
-	Karel the Robot IDE in Java,
-	Canopy Framework. \\
+	\item[Contribuciones en proyectos:]
+	Karel the Robot IDE en Java,
+	Canopy Framework. 
 	
 \end{description*}
 \end{indentsection}
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Experience.}
+\subsection*{Experiencia.}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -113,16 +113,17 @@ Pino Michoacán \# 60\ \ \textbullet
 
 	\item
 	\headerrow
-		{\textbf{As Freelancer.}}
+		{\textbf{Proyectos personales.}}
 		{\textbf{}}
 	\\
 	\headerrow
 		{\emph{}}
 		{\emph{2009 -- 2013}}
 	\begin{itemize*}
-		\item I was made several little applications with some people. The most
-		important was Karel the Robot IDE, an IDE for help some students in
-		learning process of programming languages.
+		\item Desarrollé varios proyectos pequeños individualmente y con ayuda de
+		otro estudiante. De nuestros proyectos el más significativo ha sido "Karel the 
+		Robot IDE". En éste proyecto usamos por primera vez un repositorio remoto
+		localizado en la dirección: https://github.com/UzielSilva/KOMI
 	\end{itemize*}
 
 	\item
@@ -131,26 +132,41 @@ Pino Michoacán \# 60\ \ \textbullet
 		{\textbf{http://sciodev.com/}}
 	\\
 	\headerrow
-		{\emph{Software Developer}}
+		{\emph{Application Developer 1A}}
 		{\emph{2013 -- Present}}
 	\begin{itemize*}
-		\item In Scio I learned about Test Driven Development, a powerful practice
-		for professional programming. This practice make clean code and reduce time
-		of bug fixing.
-		Unit tests help too with documentation, and is more easy to understand
-		applications with unit tests.
-		\item Agile Metodologies, like Scrum. This technique allows to all members
-		know the advances for all members of team. Scrum is very useful. If any member
-		isn't working, in Scrum all members know this, and help if they have any difficult.
-		\item Use of repositories like TFS, GitHub and SVN. And remote repositories.
-	    \item Use of test tools and developing automated tests with F\# and Canopy. This
-		practice helps in app development. So it can find some UI errors. Automated tests
-	    helps testing common automated tasks. It allows to the developer work in other tasks
-	    while test of UI is finished.
-	    \item Use of Continuous Integration for automated Build, test and deploy.
-	    With CruiseControl.NET we can check if commits of members of the team don't break
-	    the solution. We can add several tasks in the CCNet configuration and for each
-	    commit, CCNet will run these tasks.
+		\item En Scio aprendí acerca del Test Driven Development, una poderosa práctica
+		para programar profesionalmente. Ésta práctica nos obligab a desarrollar código
+		funcional y mantenible, ésto a su vez reduce la probabilidad de encontrar bugs
+		en nuestro código, y, por lo tanto, a dedicar tanto tiempo a arreglar los mismos.
+		Las pruebas unitarias a su vez nos ayudan con la documentación, y tanto el cliente
+		como el desarrollador pueden comprender qué parte del código es la que se encarga
+		de cumplir una función en particular, y si ésta es la función deseada.
+		\item Metodologías Ágiles, como Scrum. Ésta técnica permite a todos los miembros
+		saber los avances de todo el equipo. Scrum es muy útil, ya que si a alguien se le
+		dificulta alguna tarea, todo el equipo puede darse cuenta, y pueden ayudar para 
+		que pueda salir adelante.
+		Por otro lado, Scrum ayuda a la planificación realista de proyectos. Si en cada
+		Scrum las tareas que se propusieron se han cumplido, eso significa que la 
+		planificación es realista, pero si se están acumulando tareas que no se alcanzan 
+		a cumplir, entonces es tiempo para poder hacer una nueva planeación y comunicar
+		acerca de ésta situación al cliente.
+		\item Uso de repositorios como Git y SVN. El control de código es muy importante 
+		cuando se desarrolla una aplicación, ya que si algo crítico pasara con nuestro 
+		proyecto, podemos regresar a una versión estable. Por otra parte, también nos ayudan
+		las ramas y las fusiones cuando trabajamos en equipo, ya que de ésta manera no 
+		estorbamos en el trabajo de alguien más.
+	    \item Uso de herramientas de pruebas automatizacas como Canopy. Éstas herramientas
+	    son muy útiles ya que para probar cambios en la UI no tenemos que invertir tiempo,
+	    sólo debemos de correr nuestras pruebas automatizadas y éstas nos dirán si no
+	    rompimos algo.
+	    Éstas pruebas también son una garantía al cliente de que su producto es como él
+	    esperaba.
+	    \item Uso de herramientas de Integración Continua para automatizar las tareas comunes
+	    para evaluar el código. Con CruiseControl.NET podemos evaluar si los commits de
+	    los miembros del equipo no cumplen con las espectativas como para poder integrarlos 
+	    a la solución. También por medio de CruiseControl podemos hacer tareas como
+	    deployment si es que el commit cumple con lo esperado.
 	\end{itemize*}
 
 \end{itemize}
@@ -158,7 +174,7 @@ Pino Michoacán \# 60\ \ \textbullet
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Relevant Education}
+\subsection*{Educación Relevante}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -172,7 +188,8 @@ Pino Michoacán \# 60\ \ \textbullet
 		{\emph{Facultad de Ciencias Físico-Matemáticas Luis Manuel Gutierrez Rivera}}
 		{\emph{2012 -- Present}}
 	\begin{itemize*}
-		\item In this university I'm currently coursing my bachelors degree as matematician.
+		\item En ésta universidad actualmente estoy cursando la carrera de Licenciatura en
+		Ciencias Físico-Matemáticas.
 	\end{itemize*}
 
 \end{itemize}
