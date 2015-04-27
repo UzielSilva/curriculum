@@ -2,7 +2,7 @@
 % vim:set ft=tex spell:
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.60in]{geometry}
+\usepackage[letterpaper,margin=0.25in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
@@ -49,7 +49,7 @@ Pino Michoacán \# 60\ \ \textbullet
 \ \ Los Pinos de Michoacán\ \ \textbullet
 \ \ Morelia, Michoacán. México 58057
 \\
-452-117-7849\ \ \textbullet
+443-146-0935\ \ \textbullet
 \ \ uziel.silva.espino@gmail.com
 \end{center}
 
@@ -78,15 +78,22 @@ Pino Michoacán \# 60\ \ \textbullet
 \hyphenpenalty=1000
 \begin{description*}
 	\item[Habilidades generales:]
-	Test Driven Development, Inglés (40\% - 60\%). 
+	Test Driven Development, Inglés (20\% - 40\%). 
 	
 	\item[Herramientas de pruebas:]
 	Canopy,
+	Fluent Automation,
+	TestStack.White,
 	Selenium,
-	NUnit. 
+	NUnit,
+	JUnit,
+	Jasmine.
 	
 	\item[Lenguajes de programación:]
+	VB6
+	VB.Net
 	Java,
+	JavaScript,
 	C\#,
 	C,
 	F\#,
@@ -96,9 +103,18 @@ Pino Michoacán \# 60\ \ \textbullet
 	\item[Integración continua:]
 	CruiseControl.NET. 
 	
+	\item[Análisis de código:]
+	StyleCop
+	Simian. 
+	
+	\item[Bases de datos:]
+	MySQL.
+	
+	\item[Javascript:]
+	Angular.js
+	
 	\item[Contribuciones en proyectos:]
-	Karel the Robot IDE en Java,
-	Canopy Framework. 
+	Karel the Robot IDE en Java.
 	
 \end{description*}
 \end{indentsection}
@@ -118,12 +134,17 @@ Pino Michoacán \# 60\ \ \textbullet
 	\\
 	\headerrow
 		{\emph{}}
-		{\emph{2009 -- 2013}}
+		{\emph{2009 -- Presente}}
 	\begin{itemize*}
-		\item Desarrollé varios proyectos pequeños individualmente y con ayuda de
-		otro estudiante. De nuestros proyectos el más significativo ha sido "Karel the 
-		Robot IDE". En éste proyecto usamos por primera vez un repositorio remoto
-		localizado en la dirección: https://github.com/UzielSilva/KOMI
+		\item "Karel the Robot IDE". En éste proyecto desarrollamos nuestro propio 
+		compilador para el lenguaje Karel Pascal y Karel Java en Java, se puede encontrar el
+		repositorio en la dirección: https://github.com/UzielSilva/KOMI
+		
+		\item "Rounded Defence". Es un videojuego desarrollado en C\# con el motor de Unity 
+		con el motivo de ser presentado para un concurso de programación de videojuegos.
+		Cuenta con un sistema dinámico de niveles en XML y tiene una interfaz gráfica bastante
+		trabajada, se puede encontrar el repositorio en la dirección: 
+		https://github.com/UzielSilva/RoundedDefence
 	\end{itemize*}
 
 	\item
@@ -132,41 +153,23 @@ Pino Michoacán \# 60\ \ \textbullet
 		{\textbf{http://sciodev.com/}}
 	\\
 	\headerrow
-		{\emph{Application Developer 1A}}
-		{\emph{2013 -- Present}}
+		{\emph{Application Developer 1C}}
+		{\emph{2013 -- 2015}}
 	\begin{itemize*}
-		\item En Scio aprendí acerca del Test Driven Development, una poderosa práctica
-		para programar profesionalmente. Ésta práctica nos obligab a desarrollar código
-		funcional y mantenible, ésto a su vez reduce la probabilidad de encontrar bugs
-		en nuestro código, y, por lo tanto, a dedicar tanto tiempo a arreglar los mismos.
-		Las pruebas unitarias a su vez nos ayudan con la documentación, y tanto el cliente
-		como el desarrollador pueden comprender qué parte del código es la que se encarga
-		de cumplir una función en particular, y si ésta es la función deseada.
+		\item Test Driven Development. Es una poderosa práctica	para programar profesionalmente
+		que nos obliga a desarrollar código	funcional y mantenible, y reducir la probabilidad 
+		de encontrar errores. Además nos ayuda con la documentación del código.
 		\item Metodologías Ágiles, como Scrum. Ésta técnica permite a todos los miembros
-		saber los avances de todo el equipo. Scrum es muy útil, ya que si a alguien se le
-		dificulta alguna tarea, todo el equipo puede darse cuenta, y pueden ayudar para 
-		que pueda salir adelante.
-		Por otro lado, Scrum ayuda a la planificación realista de proyectos. Si en cada
-		Scrum las tareas que se propusieron se han cumplido, eso significa que la 
-		planificación es realista, pero si se están acumulando tareas que no se alcanzan 
-		a cumplir, entonces es tiempo para poder hacer una nueva planeación y comunicar
-		acerca de ésta situación al cliente.
+		saber los avances de todo el equipo.  Scrum ayuda a la planificación realista de 
+		proyectos. 
 		\item Uso de repositorios como Git y SVN. El control de código es muy importante 
-		cuando se desarrolla una aplicación, ya que si algo crítico pasara con nuestro 
-		proyecto, podemos regresar a una versión estable. Por otra parte, también nos ayudan
-		las ramas y las fusiones cuando trabajamos en equipo, ya que de ésta manera no 
-		estorbamos en el trabajo de alguien más.
-	    \item Uso de herramientas de pruebas automatizacas como Canopy. Éstas herramientas
-	    son muy útiles ya que para probar cambios en la UI no tenemos que invertir tiempo,
-	    sólo debemos de correr nuestras pruebas automatizadas y éstas nos dirán si no
-	    rompimos algo.
-	    Éstas pruebas también son una garantía al cliente de que su producto es como él
-	    esperaba.
+		cuando se desarrolla una aplicación, al brindar la posibilidad de regresar a una
+		versión anterior del código. Por otra parte, las ramas y las fusiones ayudan cuando 
+		se trabaja en equipo.
 	    \item Uso de herramientas de Integración Continua para automatizar las tareas comunes
-	    para evaluar el código. Con CruiseControl.NET podemos evaluar si los commits de
-	    los miembros del equipo no cumplen con las espectativas como para poder integrarlos 
-	    a la solución. También por medio de CruiseControl podemos hacer tareas como
-	    deployment si es que el commit cumple con lo esperado.
+	    para evaluar el código. Con CruiseControl.NET podemos evaluar si el código de
+	    los miembros del equipo cumplen con las espectativas como para poder integrarlos 
+	    a la solución. También por medio de CruiseControl podemos hacer tareas automatizadas.
 	\end{itemize*}
 
 \end{itemize}
@@ -186,9 +189,9 @@ Pino Michoacán \# 60\ \ \textbullet
 	\\
 	\headerrow
 		{\emph{Facultad de Ciencias Físico-Matemáticas Luis Manuel Gutierrez Rivera}}
-		{\emph{2012 -- Present}}
+		{\emph{2012 -- Presente}}
 	\begin{itemize*}
-		\item En ésta universidad actualmente estoy cursando la carrera de Licenciatura en
+		\item Actualmente estoy cursando la carrera de Licenciatura en
 		Ciencias Físico-Matemáticas.
 	\end{itemize*}
 
