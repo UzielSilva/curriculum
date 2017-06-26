@@ -1,0 +1,269 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.25in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\title{Curriculum Vitae}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Uziel Silva Espino}}
+
+Pino Montezuma \# 29\ \ \textbullet
+\ \ Los Pinos de Michoacan\ \ \textbullet
+\ \ Morelia, Michoacan. Mexico 58057
+\\
+443-146-0935\ \ \textbullet
+\ \ uziel.silva.espino@gmail.com
+\end{center}
+
+\hrule
+\vspace{-0.9em}
+\subsection*{Personal accounts}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Skype:]
+	uziel.silva.espino
+	\item[GitHub:]
+	UzielSilva
+	\item[Koding:]
+	uzielsilva
+	
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{General skills.}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:] 
+    English (50\% -70\%).
+    
+    \item[Agile Methodologies:]
+    Scrum.
+	
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Development skills.}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[General skills:]
+	Test Driven Development.
+	
+	\item[Unit Testing Tools:]
+	NUnit,
+	JUnit,
+	Jasmine,
+    Karma,
+    Phantom.js.
+	
+	\item[Programming languages:]
+	VB6,
+	VB.Net,
+	Java,
+	JavaScript,
+	C\#,
+	C,
+	F\#,
+	HTML,
+	PHP,
+    Bash,
+	Ruby. 
+	
+	\item[Continuous Integration:]
+	CruiseControl.NET,
+    Travis CI. 
+	
+	\item[Databases:]
+	MySQL,
+    SQLite.
+	
+	\item[Javascript frameworks:]
+	Angular.js,
+    D3.js,
+    Restangular,
+    JQuery.
+    
+    \item[Development tools:]
+	Node.js,
+    Grunt,
+    Gulp,
+    Bower,
+    Yeoman,
+    MSBuild.
+    
+    \item[Mobile hybrid frameworks:]
+    PhoneGap/Cordova,
+    Ionic Framework.
+	
+	\item[Project contributions:]
+	Karel the Robot IDE in Java,
+    Rounded Defence.
+	
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Testing/Automation skills.}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+
+    \item[General skills:]
+    Test Case Execution,
+    Functional Testing,
+    Exploratory Testing,
+    Bug Fix Verification,
+    Test Case Automation.
+	
+	\item[Testing tools:]
+	TestStack.White,
+	Selenium,
+    Charles Proxy,
+    Fiddler,
+    Appium.
+	
+	\item[Code analysis:]
+	StyleCop,
+	Simian. 
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience.}
+
+\begin{itemize}
+	\parskip=0.1em
+
+
+	\item
+	\headerrow
+		{\textbf{Personal Projects.}}
+		{\emph{2009 -- Present}}
+	\begin{itemize*}
+		\item "Karel the Robot IDE". Compiler based in Java for an educational language 
+        called Karel The Robot. You can find the repository here: https://github.com/UzielSilva/KOMI
+		
+		\item "Rounded Defence". Video game developed in C\# with Unity game engine 
+        with the purpose of participate in a video game contest. It counts with a dynamic 
+        system of levels in XML and it has an elaborated and attractive GUI. You can find the repository here:
+		https://github.com/UzielSilva/RoundedDefence
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Scio}}
+		{\textbf{http://sciodev.com/}}
+	\\
+	\headerrow
+		{\emph{Application Developer 1C}}
+		{\emph{2013 -- 2015}}
+	\begin{itemize*}
+		\item Test Driven Development. Powerful practice for professional developers.
+        It forces you to develop functional and readable, and it prevents common bugs, 
+        also it helps with project documentation.
+		\item Agile Methodologies, like Scrum. Scrum helps project planning to be more realistic.
+		\item Use of repositories like Git and SVN. This is very important in develop teams for 
+        maintain a common version of a project.
+	    \item Use of Continuous Integration tools for automate several revision tasks.
+	\end{itemize*}
+    
+    \item
+	\headerrow
+		{\textbf{Freelance}}
+		{\emph{2015 -- Present}}
+	\begin{itemize*}
+		\item Node.js Environment. There are several Node.js applications that allow project 
+        development to be more easily, with functions like live-reload, task running, 
+        dependency resolver, and many others.
+        \item Mobile Apps. I learned how hybrid apps work, and I develop several 
+        projects related with that.
+        \item Back-end development. I developed web services based on PHP language, 
+        and with MySQL and SQLite databases.
+	\end{itemize*}
+    
+    \item
+	\headerrow
+		{\textbf{uTest}}
+		{\textbf{https://www.utest.com/}}
+	\\
+	\headerrow
+		{\emph{Freelance Functional Tester(Silver Tester)}}
+		{\emph{January 2016 -- Present}}
+	\begin{itemize*}
+		\item Test Cycle Methodology. In this page I did effective issue reports and test case executions.
+   	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Relevant Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{UMSNH (Universidad Michoacana de San Nicolas de Hidalgo).}}
+		{\textbf{Morelia, Michoacan}}
+	\\
+	\headerrow
+		{\emph{Facultad de Ciencias Fisico-Matematicas Luis Manuel Gutierrez Rivera}}
+		{\emph{2012 -- Present}}
+
+\end{itemize}
+
+\end{document}
